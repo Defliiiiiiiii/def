@@ -1,0 +1,91 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: cursive; /* Default font family with fallback */
+  background-color: #e0f7fa; /* Light blue background */
+  color: #004d40; /* Dark teal text color */
+}
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #00796b; /* Teal header background */
+  padding: 1em 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2em;
+  background: linear-gradient(
+    45deg,
+    #000000,
+    #000000
+  ); /* Gradient colors: dark teal to light teal */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: #ffffff; /* White link text */
+  text-decoration: none;
+  margin: 0 1em;
+  padding: 8px 12px;
+  border-radius: 5px;
+  background-color: #004d40; /* Dark teal link background */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+nav a:hover {
+  background-color: #00796b; /* Teal background on hover */
+  text-decoration: underline; /* Underline on hover */
+}
+
+.container {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.blog-post {
+  margin-bottom: 30px;
+  background-color: #b2ebf2; /* Light cyan background for blog posts */
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.blog-post h2 {
+  color: #004d40; /* Dark teal heading color */
+}
+
+.blog-post p {
+  color: #004d40; /* Dark teal paragraph text color */
+  line-height: 1.6;
+}
+
+footer {
+  background-color: #00796b; /* Teal footer background */
+  color: #ffffff; /* White footer text color */
+  text-align: center;
+  padding: 10px;
+  margin-top: auto; /* Pushes footer to the bottom */
+}
+
+footer a {
+  color: #ffffff; /* White footer link color */
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
